@@ -1,0 +1,95 @@
+.scene-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #87CEEB, #4a90e2);
+}
+
+.sky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70%;
+  background: linear-gradient(180deg, #87CEEB 0%, #4a90e2 100%);
+  z-index: 1;
+}
+
+.ground {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: #654321;
+  z-index: 2;
+}
+
+.grass {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(180deg, #4CAF50 0%, #2E7D32 100%);
+  z-index: 3;
+}
+
+.trench-container {
+  position: absolute;
+  left: 10%;
+  bottom: 0;
+  width: 40%;
+  height: 80%;
+  transform-origin: bottom;
+  transition: transform 0.5s ease-in-out;
+  z-index: 4;
+}
+
+.trench-left-wall {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: linear-gradient(90deg, #2c3e50 0%, #34495e 100%);
+  box-shadow: inset -5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.trench-right-wall {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  background: linear-gradient(270deg, #2c3e50 0%, #34495e 100%);
+  box-shadow: inset 5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.trench-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+  right: 40px;
+  height: 40px;
+  background: #1a1a1a;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.player-avatar {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  z-index: 5;
+}
+
+.player-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+} 
