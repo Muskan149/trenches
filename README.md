@@ -1,46 +1,102 @@
-# Getting Started with Create React App
+# Trenches - Financial Literacy Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Trenches is an innovative web-based game that helps users improve their financial literacy by analyzing their real transaction data and creating personalized financial challenges. The game uses the Knot API to fetch real transaction data and leverages Google's Gemini AI to provide intelligent insights and recommendations.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Real transaction data analysis using Knot API
+- AI-powered financial insights using Google's Gemini
+- Personalized financial challenges based on spending patterns
+- Interactive learning moments with AI-generated explanations
+- Progress tracking and scoring system
+- Beautiful and intuitive user interface
+- Secure OAuth-based authentication with Knot API
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Frontend:
+  - React with TypeScript
+  - ShadCN for UI components
+  - Framer Motion for animations
+  - React Three Fiber for 3D graphics
+  - D3.js for data visualization
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Backend:
+  - Node.js with Express
+  - Google Gemini API for transaction analysis and insights
+  - Knot API for secure transaction data access
+  - OAuth 2.0 for secure authentication
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/trenches.git
+cd trenches
+```
 
-### `npm run build`
+2. Install dependencies:
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Create a `.env` file in the root directory with the following variables:
+```
+REACT_APP_GEMINI_API_KEY=your_gemini_api_key
+REACT_APP_KNOT_CLIENT_ID=your_knot_client_id
+REACT_APP_KNOT_CLIENT_SECRET=your_knot_client_secret
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Start the development server:
+```bash
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+```
+src/
+├── components/         # React components
+│   ├── auth/          # Authentication components
+│   ├── dashboard/     # Dashboard and game components
+│   └── shared/        # Shared UI components
+├── contexts/          # React contexts for state management
+├── services/          # API and utility services
+│   ├── knot/         # Knot API integration
+│   └── gemini/       # Gemini API integration
+├── types/            # TypeScript type definitions
+├── assets/           # Static assets (images, 3D models)
+└── styles/           # CSS styles
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Key Features
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Knot API Integration
+- Secure OAuth-based authentication
+- Real-time transaction data access
+- Account linking and management
+- Transaction categorization and analysis
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Gemini AI Analysis
+- Intelligent spending pattern recognition
+- Personalized financial recommendations
+- Natural language explanations of financial concepts
+- Dynamic challenge generation based on user behavior
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Contributing
 
-## Learn More
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Knot API for providing secure transaction data access
+- Google's Gemini API for intelligent financial analysis
+- React Three Fiber for 3D graphics capabilities 
