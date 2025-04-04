@@ -1,5 +1,7 @@
 # Trenches - Financial Literacy Game
 
+![image](https://github.com/user-attachments/assets/445fd5cb-bcca-46b6-8b01-95ab7183998c)
+
 Trenches is an innovative web-based game that helps users improve their financial literacy by analyzing their real transaction data and creating personalized financial challenges. The game uses the Knot API to fetch real transaction data and leverages Google's Gemini AI to provide intelligent insights and recommendations.
 
 ## Features
